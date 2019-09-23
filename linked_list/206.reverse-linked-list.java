@@ -36,7 +36,7 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-      /*
+     *
       // iteration solution
       // edge case: if null, return null
       if (head == null) {
@@ -51,22 +51,8 @@ class Solution {
         head = head.next;
       }
       return ans;
+    }
 
-      */
       
-      //resursion
-      if (head == null) {
-        return null;
-      } else {
-        // recursive case
-        return cons(head.val, reverseList(head.next));
-      }
-        
-    }
-
-    public ListNode cons(int val, ListNode list) {
-      ListNode n = new ListNode(val);
-      n.next = list;
-      return n;
-    }
+      
 }
